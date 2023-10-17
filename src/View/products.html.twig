@@ -1,10 +1,21 @@
-{% extends 'home.html.twig' %}
-{% block title%}Liste de mes produits{% endblock %}
-{% block body %}
-    <h1>La magnifique liste de mes produits</h1>
-    <ul>
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bonjour</title>
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    {% block body %} 
+        <h1>La magnifique liste de mes produits</h1>
+        <ul>
         {% for product in products %}
         <li>{{ product}}</li>
         {% endfor %}
-    </ul>
-{% endblock %}
+        </ul>
+    {% endblock %}
+</body>
+</html>
